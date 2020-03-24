@@ -1,0 +1,797 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+
+    font-size: 19px;
+    line-height: 1.6;
+    color: #000000;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* container */
+.container {
+    width: 100%;
+    max-width: 1600px;
+    padding: 0 15%;
+    margin: 0 auto;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 4.0625% 4.0625% 0;
+    background-color: #f3f4f9;
+}
+
+.header__logo {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 700;
+    color: #000;
+}
+
+.header__inner {
+    display: flex;
+}
+
+.header__item {
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    text-decoration: none;
+    margin: 0 25px;
+    color: #000;
+    font-weight: 700;
+    font-size: 16px;
+    transition: color .1s linear;
+}
+
+.header__item:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+
+    background-color: #000000;
+    opacity: 0;
+
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+
+    transition: opacity .1s linear;
+}
+
+.header__item:hover:after,
+.header__item.active:after {
+    opacity: 1;
+}
+
+.header__icon {
+    width: 16px;
+    height: 16px;
+}
+
+/* Intro */
+.intro {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 8.125% 15.3125% 9.375% 0;
+    background-color: #f3f4f9;
+}
+
+.img__po {
+    width: 45%;
+}
+
+.intro__img {
+    display: block;
+    max-width: 100%;
+    max-height: auto;
+    height: auto;
+}
+
+.intro__col {
+    width: 31.25%;
+}
+
+.intro__title {
+    font-weight: 700;
+    font-size: 56px;
+}
+
+.intro__text {
+    margin-top: 1.5625%;
+    font-size: 21px;
+
+}
+
+.intro__view {
+    margin-top: 3.75%;
+    font-size: 21px;
+    font-weight: 700;
+}
+
+/* Saler */
+.saler {
+    padding: 7.8125% 0;
+    margin: 0 auto;
+}
+
+.saler__welcome {
+    text-align: center;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.saler__title {
+    margin-bottom: 7.5%;
+    font-weight: 700;
+    font-size: 42px;
+    text-align: center;
+}
+
+.saler__col {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8.125%;
+}
+
+.saler__col__item {
+    display: flex;
+}
+
+.col__1 {
+    width: 100%;
+    padding: 0 0 0 8%;
+}
+
+.saler__col__img {
+    display: block;
+    width: 64px;
+    max-width: 100%;
+    height: 44px;
+}
+
+.saler__col__text {
+    display: flex;
+    flex-direction: column;
+    padding: 0 8%;
+}
+
+.saler__col__title {
+    font-weight: 700;
+}
+
+.saler__car__text {
+    font-size: 14px;
+}
+
+.saler__title__2 {
+    font-weight: 700;
+    font-size: 42px;
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 1.875%;
+
+}
+
+.saler__text__2 {
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 5.625%;
+}
+
+.saler__gallery {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto 4.0625%;
+}
+
+.saler__gallery__col {
+    display: flex;
+    flex-direction: column;
+    width: 32%;
+}
+
+.works__item {
+    position: relative;
+    width: 100%;
+
+    background: #373538;
+}
+
+.works__item:hover .works__image {
+    opacity: .1;
+}
+
+.works__item:hover .works__info {
+    opacity: 1;
+}
+
+.works__image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+
+    transition: opacity .2s linear;
+}
+
+.works__info {
+    height: 20%;
+    width: 100%;
+
+    text-align: center;
+    color: #fff;
+    opacity: 0;
+
+    position: absolute;
+    top: 50%;
+    left: 0;
+    z-index: 1;
+
+    transform: translate3d(0, -50%, 0);
+    transition: opacity .2s linear;
+}
+
+.works__title {
+    align-items: center;
+}
+
+.gallery__po {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2.5%;
+    font-weight: 700;
+}
+
+.know {
+    text-align: center;
+    margin: 0 auto;
+    width: 46.25%;
+    padding-bottom: 3.75%;
+}
+
+.know__title {
+    font-weight: 700;
+    font-size: 42px;
+}
+
+.know__text {
+    padding: 2.1875% 4.6875%;
+}
+
+.email__item {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 7.81%;
+}
+
+.email {
+    padding: 1.25% 23.43% 1.25% 0.31%;
+    border: none;
+    font-size: 19px;
+    margin: 0 0,78125%;
+    background-color: #f0f0f0;
+}
+
+.email__btn {
+    padding: 1.375% 2.5%;
+    margin: 0 0.78%;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #110e0f;
+}
+
+.email__btn:hover {
+    color: #110e0f;
+    background-color: #fff;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 3.75% 15%;
+    background-color: #000000;
+}
+
+.footer__inner {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__inner__1 {
+    width: 15.625%;
+}
+
+.first__title {
+    margin-bottom: 11%;
+}
+
+
+.footer__title {
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 40px;
+}
+
+.footer__text {
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #fff;
+}
+
+.footer__contact {
+    display: flex;
+}
+
+.footer__img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin-right: 10px;
+}
+
+hr {
+    display: block;
+    width: 100%;
+    margin: 0;
+    height: 1px;
+    color: #404040;
+}
+
+.footer__end {
+    display: flex;
+    justify-content: space-between;
+    padding: 3.75% 15%;
+    background-color: #000000;
+}
+
+.footer__end__text {
+    font-size: 16px;
+    color: #fff;
+    margin-right: 30px;
+}
+
+.footer__end__nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.link__item {
+    margin-left: 30px;
+}
+
+/* Page */
+
+.page__section {
+    padding: 9.375% 7.1875%;
+}
+
+.page__header {
+    background-color: #fff;
+}
+
+.page__inner {
+    display: flex;
+    justify-content: space-between;
+    padding: 4.06% 0 2.8125%;
+}
+
+.page__img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin-right: 0.9375%;
+}
+
+.page__text {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #000000;
+    margin-left: 1.5625%;
+}
+
+.page__text__section {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #000000;
+    margin-bottom: 1.875%;
+}
+
+.page__section__2 {
+    margin-bottom: 7.5%;
+}
+
+.contact {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0 7.5%;
+    align-items: center;
+}
+
+.contact__inner {
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.contact__adress {
+    margin-top: 0.625%;
+    font-size: 23px;
+}
+
+.contact__img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.about {
+    text-align: center;
+    margin: 0 auto;
+    padding: 11.25% 0;
+    background-color: #edf6ff;
+    font-weight: 700;
+}
+
+.about__col {
+    margin-right: 6.25%;
+}
+
+.about__title {
+    font-weight: 700;
+    font-size: 2.625%;
+}
+
+.about__suptitle {
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.about__subtitle {
+    font-size: 21px;
+    margin-bottom: 30px;
+}
+
+.about__text {
+    font-size: 16px;
+}
+
+.about__header {
+    padding-bottom: 45px;
+}
+
+.about__section {
+    display: flex;
+    justify-content: space-between;
+    padding: 120px 0 70px;
+}
+
+.about__yellow {
+    font-weight: 700;
+    font-size: 30px;
+    color: #f0a232;
+}
+
+.about__img__rel .about__img__abs {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.about__img__rel {
+    position: relative;
+}
+
+.about__img__abs {
+    position: absolute;
+    top: -70px;
+    right: -190px;
+    z-index: 1;
+}
+
+.pic__col {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.about__section__img {
+    display: block;
+    max-width: 100%;
+    margin-bottom: 125px;
+    height: auto;
+}
+
+.store {
+    text-align: center;
+    margin: 0 auto;
+    padding: 150px 0;
+}
+
+.store__suptitle {
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.store__title {
+    font-weight: 700;
+    font-size: 42px;
+}
+
+/* @media (max-width: 1400px) {
+    .intro {
+        padding: 65px 140px 75px 0;
+        line-height: 1.4;
+    }
+
+    .asler__gallery__col {
+        margin: 0 15px;
+    }
+} */
+/* 
+@media (max-width: 1300px) {
+    .intro {
+        padding: 65px 120px 75px 0;
+    }
+
+    .intro__title {
+        font-size: 45px;
+    }
+
+    .intro__text {
+        font-size: 19px;
+    }
+
+    .intro__view {
+        font-size: 19px;
+    }
+
+    .email__btn {
+        font-size: 17px;
+    }
+
+    .footer__end__text {
+        margin-right: 10px;
+        font-size: 14px;
+    }
+
+    .link__item {
+        margin-left: 20px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .header__item {
+        margin: 0 15px;
+        font-size: 14px;
+    }
+
+    .intro__title {
+        font-size: 40px;
+    }
+
+    .intro {
+        padding: 65px 120px 75px 0;
+    }
+
+    .saler__title {
+        font-size: 36px;
+    }
+
+    .saler__col__title {
+        font-size: 17px;
+    }
+
+    .saler__car__text {
+        font-size: 12px;
+    }
+
+    .saler__title__2 {
+        font-size: 36px;
+    }
+
+    .saler__text__2 {
+        font-size: 17px;
+    }
+
+    .gallery__text {
+        font-size: 17px;
+    }
+
+    .know__title {
+        font-size: 36px;
+    }
+
+    .know__text {
+        font-size: 17px;
+    }
+
+    .email__btn {
+        font-size: 15px;
+    }
+
+    .footer__title {
+        font-size: 16px;
+    }
+
+    .footer__text {
+        font-size: 12px;
+    }
+}
+
+@media (max-width:900px) {
+    .footer__end {
+        flex-wrap: wrap;
+    }
+
+    .footer__end__link {
+        margin-top: 10px;
+    }
+
+    .link__item {
+        margin: 0 20px 0 0;
+    }
+
+    .email {
+        font-size: 15px;
+    }
+}
+
+@media (max-width:800px) {
+    .intro__title {
+        font-size: 36px;
+    }
+
+    .intro__text {
+        font-size: 15px;
+    }
+
+    .know__text {
+        font-size: 15px;
+    }
+}
+
+@media (max-width:700px) {
+    .intro__title {
+        font-size: 30px;
+    }
+
+    .intro__text {
+        font-size: 14px;
+    }
+
+    .intro__view {
+        font-size: 15px;
+    }
+
+    .saler__col {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .saler__col__item {
+        margin-bottom: 20px;
+    }
+
+    .saler__title.saler__title__2 {
+        font-size: 30px;
+    }
+
+    .saler__gallery {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .saler__gallery__col {
+        display: flex;
+        flex-wrap: wrap;
+        width: 47%;
+        margin-bottom: 20px;
+        height: auto;
+    }
+
+    .works__item {
+        width: 100%;
+    }
+
+    .email {
+        font-size: 12px;
+    }
+
+    .email__btn {
+        font-size: 12px;
+    }
+
+    .footer__title {
+        font-size: 14px;
+    }
+
+    .footer {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        text-align: center;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .footer__inner__1 {
+        display: flex;
+        flex-wrap: wrap;
+        width: 33%;
+    }
+
+    .footer__inner {
+        display: flex;
+        flex-wrap: wrap;
+        width: 30%;
+        margin-bottom: 20px;
+    }
+
+    .footer__title {
+        margin-bottom: 20px;
+    }
+
+    .footer__text {
+        margin-bottom: 10px;
+    }
+
+    .footer__end {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .footer__end__text {
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 600px) {
+    .header {
+        font-size: 12px;
+    }
+
+    .header__item {
+        font-size: 14px;
+        margin: 0 10px;
+    }
+    .saler__text__2 {
+        font-size: 12px;
+    }
+
+    .gallery__text {
+        font-size: 14px;
+    }
+    .intro {
+        padding: 65px 20px 75px 0;
+    }
+    .know__title .saler__title__2 .saler__title {
+        font-size: 30px;
+    }
+
+    .know__text {
+        font-size: 12px;
+    }
+} */
